@@ -19,6 +19,7 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -34,7 +35,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="#!/users">Users</a></li>
-          <li><a href="#!/view2">view2</a></li>
+          <li><a href="#!/customers">Customers</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +45,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <div class="container-fluid">
-    <div ng-view></div>
+    <div ng-view class="main-container"></div>
     <div app-info class="panel-footer app-info"></div>
   </div>
 
@@ -58,7 +59,8 @@
   <script src="users/users.config.js"></script>
   <script src="users/users.controller.js"></script>
 
-  <script src="view2/view2.js"></script>
+  <script src="customers/customers.config.js"></script>
+  <script src="customers/customers.controller.js"></script>
 
   <script src="components/app-info/app-info.value.js"></script>
   <script src="components/app-info/interpolate.filter.js"></script>

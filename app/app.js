@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.users',
-  'myApp.view2',
+  'myApp.customers',
   'myApp.appInfo',
   'myApp.appInfo-directive'
 ]).
