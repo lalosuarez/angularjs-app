@@ -1,14 +1,14 @@
 'use strict';
 
-describe('myApp.module1 module', function() {
+describe('myApp.users module test', function() {
 
-  beforeEach(module('myApp.module1'));
+  beforeEach(module('myApp.users'));
 
-  describe('myApp.module1.controller controller', function(){
+  describe('myApp.users controller', function(){
 
-    it('should ....', inject(function($controller) {
+    it('should ....', inject(function($controller, $rootScope) {
       //spec body
-      var controller = $controller('Module1Ctrl');
+      var controller = $controller('UsersCtrl', {$scope: $rootScope.$new()});
       expect(controller).toBeDefined();
     }));
 

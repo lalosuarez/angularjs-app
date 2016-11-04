@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.view2 module', function() {
+describe('myApp.customers module test', function() {
 
-  beforeEach(module('myApp.view2'));
+  beforeEach(module('myApp.customers'));
 
-  describe('view2 controller', function(){
+  describe('myApp.customers controller', function(){
 
-    it('should ....', inject(function($controller) {
+    it('should ....', inject(function($controller, $rootScope) {
       //spec body
-      var view2Ctrl = $controller('View2Ctrl');
-      expect(view2Ctrl).toBeDefined();
+      var controller = $controller('CustomersCtrl', {$scope: $rootScope.$new()});
+      expect(controller).toBeDefined();
     }));
 
   });
